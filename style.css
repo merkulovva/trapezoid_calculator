@@ -1,0 +1,83 @@
+body { 
+    font-family: Calibri, sans-serif;
+    background-color: #f4f4f4;
+}
+.container { 
+    width: 70%; 
+    margin: 7px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.characteristic_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input[type="number"],
+.input-group select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.input-group input[type="number"]:focus,
+.input-group select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#clear {
+    background-color: #1eb964;
+    margin-left: 10px;
+}
+
+button#clear:hover {
+    background-color: #0c6f30;
+}
+
+#trapezoidImg {
+    width: 200px;
+    margin: 10px auto;
+}
+
+#trapezoidImg img {
+    width: 100%;
+}
+
+#results {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+}

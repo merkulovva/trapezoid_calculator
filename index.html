@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel=stylesheet type="text/css">
+    <title>Калькулятор трапеции</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Калькулятор характеристик трапеции</h2>
+        
+        <div class="input-group">
+            <label><input type="radio" name="inputType" value="base_height" checked> Основание, боковые стороны и высота</label><br>
+            <label><input type="radio" name="inputType" value="four_sides"> Четыре стороны</label><br>
+            <button id="showInputs">Показать</button>
+        </div>
+        
+        <div id="trapezoidImg">
+            <img src="images/1.png" alt="Трапеция">
+        </div>
+        
+
+
+        <div class="characteristic_box">
+            <div id="inputFields" class="input-group">
+                <div class="input-group">
+                    <label for="pole1">b = </label>
+                    <input type="number" id="pole1">
+                </div>
+                <div class="input-group">
+                    <label for="pole2">c = </label>
+                    <input type="number" id="pole2">
+                </div>
+                <div class="input-group">
+                    <label for="pole3">d = </label>
+                    <input type="number" id="pole3">
+                </div>
+                <div class="input-group">
+                    <label for="pole4">h = </label>
+                    <input type="number" id="pole4">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="characteristics">Выберите характеристики:</label><br>
+                <select id="characteristics" multiple>
+                    <option value="angles">Углы</option>
+                    <option value="diagonals">Диагонали</option>
+                    <option value="area">Площадь</option>
+                    <option value="diagonalAngle">Угол между диагоналями</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="results" class="input-group"></div>
+
+        <div class="input-group">
+            <button id="calculate">Вычислить</button>
+            <button id="clear">Очистить</button>
+        </div>
+    </div>
+
+
+    <script src="program.js"></script>   
+</body>
+</html>
